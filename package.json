@@ -1,0 +1,20 @@
+{
+  "name": "earthmounds-dot-com",
+  "version": "1.0.0",
+  "description": "A redesign of Earthmounds site but from scratch not on Squarespace.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stujmar/earthmounds-dot-com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stujmar/earthmounds-dot-com/issues"
+  },
+  "homepage": "https://github.com/stujmar/earthmounds-dot-com#readme"
+}
