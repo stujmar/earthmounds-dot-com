@@ -550,6 +550,10 @@ video {
   margin-right: auto;
 }
 
+.flex {
+  display: flex;
+}
+
 .table {
   display: table;
 }
@@ -560,6 +564,12 @@ video {
 
 .w-4 {
   width: 1rem;
+}
+
+.w-max {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 @-webkit-keyframes spin {
@@ -628,6 +638,14 @@ video {
   }
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -644,6 +662,19 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.font-poppins {
+  font-family: Poppins, sans-serif;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.hover\:text-lime-500:hover {
+  --tw-text-opacity: 1;
+  color: rgba(132, 204, 22, var(--tw-text-opacity));
 }
 
 *, ::before, ::after {

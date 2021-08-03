@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
 purge: {
   enabled: true,
@@ -5,7 +7,14 @@ purge: {
 },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+      },
+      colors: {
+        lime: colors.lime
+      }
+    },
   },
   variants: {
     extend: {},
