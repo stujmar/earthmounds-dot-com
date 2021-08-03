@@ -544,6 +544,11 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .table {
   display: table;
 }
