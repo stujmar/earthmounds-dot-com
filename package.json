@@ -4,7 +4,9 @@
   "description": "A redesign of Earthmounds site but from scratch not on Squarespace.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss styles/tailwind.css -o public/dist/tailwind.css --minify",
+    "tailwind": "npx tailwindcss -i ./styles/tailwind.css -o public/styles/tailwind.css --watch"
   },
   "repository": {
     "type": "git",
