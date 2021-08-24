@@ -11,7 +11,7 @@
     <title>Earthmounds | Contact</title>
 </head>
     <body class="" x-data="{ toggleMenu: false }">
-        <div x-show="toggleMenu">this is the mobile menu</div>
+        <div x-show="toggleMenu" class="absolute">this is the mobile menu</div>
         <div class="border bg-white h-screen p-8">
             <div class="flex justify-between items-start">
                 <a href="./index.html">
@@ -23,10 +23,24 @@
                     <a href="./about.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">about</a>
                     <a href="./contact.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">contact</a>
                 </nav>
-                <button type="button" id="hamburger" x-on:click="toggleMenu = !toggleMenu" class="flex mt-1 flex-col justify-between sm:hidden w-8 h-6">
+                <button 
+                    type="button"
+                    id="hamburger"
+                    x-on:click="toggleMenu = !toggleMenu"
+                    x-show="!toggleMenu"
+                    class="flex flex-col justify-between sm:hidden w-8 h-6">
                     <div class="w-full h-1 bg-black"></div>
                     <div class="w-full h-1 bg-black"></div>
                     <div class="w-full h-1 bg-black"></div>
+                </button>
+                <button 
+                    type="button"
+                    id="hamburger"
+                    x-on:click="toggleMenu = !toggleMenu"
+                    x-show="toggleMenu"
+                    class="flex flex-col justify-between sm:hidden w-8 h-6">
+                    <div class="w-8 h-1 top-10 bg-black absolute transform rotate-45"></div>
+                    <div class="w-8 h-1 top-10 bg-black absolute transform -rotate-45"></div>
                 </button>
             </div>
             <form class="flex flex-col w-64 gap-4 mx-auto mt-12" action="">
