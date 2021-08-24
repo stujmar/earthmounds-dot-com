@@ -1,6 +1,6 @@
 console.log("Hello from contact.js");
 
-let isMenuOpen = false;
+// let isMenuOpen = false;
 
 const menuButton = document.getElementById("hamburger");
 function toggleMenu() {
