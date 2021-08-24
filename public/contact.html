@@ -7,9 +7,11 @@
     <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Earthmounds | Contact</title>
 </head>
-    <body class="">
+    <body class="" x-data="{ toggleMenu: false }">
+        <div x-show="toggleMenu">this is the mobile menu</div>
         <div class="border bg-white h-screen p-8">
             <div class="flex justify-between items-start">
                 <a href="./index.html">
@@ -21,13 +23,13 @@
                     <a href="./about.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">about</a>
                     <a href="./contact.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">contact</a>
                 </nav>
-                <button type="button" id="hamburger" class="flex mt-1 flex-col justify-between sm:hidden w-8 h-6">
+                <button type="button" id="hamburger" x-on:click="toggleMenu = !toggleMenu" class="flex mt-1 flex-col justify-between sm:hidden w-8 h-6">
                     <div class="w-full h-1 bg-black"></div>
                     <div class="w-full h-1 bg-black"></div>
                     <div class="w-full h-1 bg-black"></div>
                 </button>
             </div>
-            <form class="flex flex-col w-64 gap-4 mx-auto mt-8" action="">
+            <form class="flex flex-col w-64 gap-4 mx-auto mt-12" action="">
                 <div>
                     <label for="name">Name</label><br>
                     <input name="name" class="border" type="text">
