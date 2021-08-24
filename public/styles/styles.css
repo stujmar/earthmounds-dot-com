@@ -835,6 +835,11 @@ video {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.text-lime-500 {
+  --tw-text-opacity: 1;
+  color: rgba(132, 204, 22, var(--tw-text-opacity));
+}
+
 .hover\:text-lime-500:hover {
   --tw-text-opacity: 1;
   color: rgba(132, 204, 22, var(--tw-text-opacity));
