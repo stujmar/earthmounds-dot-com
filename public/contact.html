@@ -21,13 +21,26 @@
                     <a href="./about.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">about</a>
                     <a href="./contact.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">contact</a>
                 </nav>
+                <div class="flex flex-col justify-between sm:hidden w-8 h-8">
+                    <div class="w-full h-1 bg-black"></div>
+                    <div class="w-full h-1 bg-black"></div>
+                    <div class="w-full h-1 bg-black"></div>
+                </div>
             </div>
             <form class="flex flex-col w-64 gap-4 mx-auto mt-8" action="">
-                <input class="border" type="text">
-                <input class="border" type="text">
-                <input class="border" type="text">
-                <input class="border" type="text">
-                <textarea class="border" name="" id="" cols="30" rows="5"></textarea>
+                <div>
+                    <label for="name">Name</label><br>
+                    <input name="name" class="border" type="text">
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input name="email" class="border" type="email">
+                </div>
+                <div>
+                    <label for="message">Message</label><br>
+                    <textarea name="message" class="border" cols="30" rows="10"></textarea>
+                </div>
+                <button class="bg-lime-500 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded-full">Submit</button>
             </form>
         </div>
         <script src="./js/contact.js"></script>
