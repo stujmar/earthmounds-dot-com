@@ -11,7 +11,7 @@
     <title>Earthmounds | Contact</title>
 </head>
     <body class="" x-data="{ toggleMenu: false }">
-        <div x-show="toggleMenu" class="absolute">this is the mobile menu</div>
+        <div class="absolute transform" :class="toggleMenu ? 'bg-red-400' : 'bg-blue-400'">this is the mobile menu</div>
         <div class="border bg-white h-screen p-8">
             <div class="flex justify-between items-start">
                 <a href="./index.html">
