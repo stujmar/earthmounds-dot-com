@@ -11,7 +11,20 @@
     <title>Earthmounds | Contact</title>
 </head>
     <body class="" x-data="{ toggleMenu: false }">
-        <div class="absolute transform w-screen h-screen bg-lime-200" :class="toggleMenu ? 'absolute' : 'hidden'">this is the mobile menu</div>
+        <div class="absolute transform w-screen h-screen bg-lime-200 p-8" :class="toggleMenu ? 'absolute' : 'hidden'">         
+            <button 
+            type="button"
+            id="hamburger"
+            x-on:click="toggleMenu = !toggleMenu"
+            x-show="toggleMenu"
+            class="block ml-auto sm:hidden w-8 h-6">
+            <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M16.37 14.2C16.79 13.69 17.19 13.18 17.62 12.68C20.79 8.94003 24.99 6.20003 27.81 2.16003C28.91 0.58003 26.3 -0.89997 25.2 0.68003C23.84 2.62003 22.06 4.20003 20.3 5.76003C18.47 7.39003 16.78 9.05003 15.19 10.91C14.86 11.3 14.54 11.7 14.22 12.09C10.04 7.98003 5.88001 3.99003 2.60001 1.05003C1.17001 -0.22997 -0.959988 1.88003 0.480012 3.17003C3.82001 6.16003 8.07001 10.24 12.33 14.43C11.85 15.04 11.36 15.66 10.88 16.28C9.38001 18.21 3.52001 23.85 1.70001 25.46C0.250012 26.74 2.38001 28.85 3.82001 27.58C5.70001 25.92 11.57 20.23 13.12 18.25C13.57 17.68 14.02 17.11 14.46 16.55C18.52 20.56 22.46 24.52 25.5 27.54C26.87 28.9 28.99 26.78 27.62 25.42C24.54 22.34 20.51 18.29 16.37 14.2Z" fill="black"/>
+                </g>
+            </svg>
+        </button>
+        </div>
         <div class="bg-white h-screen p-8 xl:w-10/12 mx-auto">
             <div class="flex justify-between items-start">
                 <a href="./index.html">
@@ -46,15 +59,6 @@
                         <path d="M2.50998 26.24C12.01 25.71 21.52 25.44 31.03 25.41C32.96 25.41 32.96 22.41 31.03 22.41C21.52 22.43 12 22.71 2.50998 23.24C0.589976 23.35 0.579976 26.35 2.50998 26.24Z" fill="black"/>
                         </g>
                     </svg>
-                </button>
-                <button 
-                    type="button"
-                    id="hamburger"
-                    x-on:click="toggleMenu = !toggleMenu"
-                    x-show="toggleMenu"
-                    class="flex flex-col justify-between sm:hidden w-8 h-6">
-                    <div class="w-8 h-1 top-10 bg-black absolute transform rotate-45"></div>
-                    <div class="w-8 h-1 top-10 bg-black absolute transform -rotate-45"></div>
                 </button>
             </div>
             <form class="flex flex-col w-64 gap-4 mx-auto mt-12" action="">
