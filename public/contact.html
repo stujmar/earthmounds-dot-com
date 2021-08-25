@@ -11,7 +11,7 @@
     <title>Earthmounds | Contact</title>
 </head>
     <body class="" x-data="{ toggleMenu: false }">
-        <div class="absolute transform" :class="toggleMenu ? 'absolute' : 'hidden'">this is the mobile menu</div>
+        <div class="absolute transform w-screen h-screen bg-lime-200" :class="toggleMenu ? 'absolute' : 'hidden'">this is the mobile menu</div>
         <div class="bg-white h-screen p-8 xl:w-10/12 mx-auto">
             <div class="flex justify-between items-start">
                 <a href="./index.html">
@@ -23,7 +23,7 @@
                     <a href="./about.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">about</a>
                     <a href="./contact.html" class="font-poppins font-medium text-lime-500 hover:text-lime-500 cursor-pointer">contact</a>
                 </nav>
-                <button 
+                <!-- <button 
                     type="button"
                     id="hamburger"
                     x-on:click="toggleMenu = !toggleMenu"
@@ -32,6 +32,20 @@
                     <div class="w-full h-1 bg-black"></div>
                     <div class="w-full h-1 bg-black"></div>
                     <div class="w-full h-1 bg-black"></div>
+                </button> -->
+                <button 
+                    type="button"
+                    id="hamburger"
+                    x-on:click="toggleMenu = !toggleMenu"
+                    x-show="!toggleMenu"
+                    class="flex flex-col justify-between sm:hidden w-8 h-6">
+                    <svg width="40" height="27" viewBox="0 0 40 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                        <path d="M1.44 3.92001C3.94 4.08001 6.45 4.22001 8.95 3.92001C11.33 3.63001 13.68 3.35001 16.07 3.15001C20.96 2.75001 25.86 3.78001 30.72 2.92001C32.62 2.58001 31.81 -0.309991 29.92 0.0300089C27.59 0.440009 25.21 0.300009 22.86 0.160009C20.41 0.0100089 18.04 8.9258e-06 15.6 0.190009C13.3 0.370009 11.04 0.650009 8.75 0.940009C6.33 1.24001 3.87 1.07001 1.44 0.920009C-0.48 0.800009 -0.48 3.80001 1.44 3.92001Z" fill="black"/>
+                        <path d="M1.5 14.68C6.22 15.36 11 14.49 15.74 14.41C18.11 14.37 20.39 13.84 22.74 13.63C25.26 13.4 27.79 13.43 30.31 13.66C32.23 13.84 32.22 10.83 30.31 10.66C27.95 10.44 25.58 10.41 23.21 10.59C20.87 10.77 18.56 11.33 16.21 11.4C13.86 11.47 11.56 11.52 9.22 11.74C6.92 11.95 4.59 12.12 2.29 11.79C0.410004 11.51 -0.399996 14.4 1.5 14.68Z" fill="black"/>
+                        <path d="M2.50998 26.24C12.01 25.71 21.52 25.44 31.03 25.41C32.96 25.41 32.96 22.41 31.03 22.41C21.52 22.43 12 22.71 2.50998 23.24C0.589976 23.35 0.579976 26.35 2.50998 26.24Z" fill="black"/>
+                        </g>
+                    </svg>
                 </button>
                 <button 
                     type="button"

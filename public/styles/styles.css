@@ -642,6 +642,10 @@ video {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .w-max {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -787,6 +791,11 @@ video {
 .bg-red-400 {
   --tw-bg-opacity: 1;
   background-color: rgba(248, 113, 113, var(--tw-bg-opacity));
+}
+
+.bg-lime-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(217, 249, 157, var(--tw-bg-opacity));
 }
 
 .bg-lime-500 {
