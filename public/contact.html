@@ -11,11 +11,11 @@
     <title>Earthmounds | Contact</title>
 </head>
     <body class="" x-data="{ toggleMenu: false }">
-        <div class="absolute transform" :class="toggleMenu ? 'bg-red-400' : 'bg-blue-400'">this is the mobile menu</div>
-        <div class="border bg-white h-screen p-8">
+        <div class="absolute transform" :class="toggleMenu ? 'absolute' : 'hidden'">this is the mobile menu</div>
+        <div class="bg-white h-screen p-8 xl:w-10/12 mx-auto">
             <div class="flex justify-between items-start">
                 <a href="./index.html">
-                    <img class="mx-auto w-36 md:w-48" src="./assets/text_logo.gif" alt="Animated logo of Earthmounds brand">
+                    <img class="mx-auto -mt-2 w-36 md:w-48" src="./assets/text_logo.gif" alt="Animated logo of Earthmounds brand">
                 </a>
                 <nav class="hidden sm:flex gap-4 ml-auto w-max">
                     <a href="./wholesale.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">wholesale</a>
