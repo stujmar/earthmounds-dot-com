@@ -28,3 +28,8 @@ function timer(timerIndex, dir, images, img) {
     }
     , 4000);
 }
+
+var tl = gsap.timeline({repeat: 30, repeatDelay: 1});
+tl.to("#conrad", {duration:2, x:300, ease: "bounce"});
+tl.to("#conrad", {duration:2, x:0, ease: "bounce"});
+// gsap.to("#conrad", {duration:2, x:0, ease: "bounce"});

@@ -622,8 +622,8 @@ video {
   height: 1.5rem;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-16 {
+  height: 4rem;
 }
 
 .h-56 {
@@ -642,8 +642,8 @@ video {
   width: 2rem;
 }
 
-.w-10 {
-  width: 2.5rem;
+.w-16 {
+  width: 4rem;
 }
 
 .w-36 {
@@ -808,11 +808,6 @@ video {
 .bg-lime-500 {
   --tw-bg-opacity: 1;
   background-color: rgba(132, 204, 22, var(--tw-bg-opacity));
-}
-
-.bg-lime-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(101, 163, 13, var(--tw-bg-opacity));
 }
 
 .hover\:bg-lime-700:hover {
