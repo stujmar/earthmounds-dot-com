@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -62,8 +63,10 @@
             <a href="./contact.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">contact</a>
         </nav>
         </div>
-        <div class="w-full h-64">
-            <div id="banner"></div>
+        <div class="w-full h-64 relative">
+            <div id="banner">
+                <div class="absolute h-64 top-0 right-0 w-12 z-50 bg-lime-400"></div>
+            </div>
         </div>
         <div class="flex flex-col justify-center items-center font-poppins absolute bottom-4 right-4">
             <div>Scroll down to read a story.</div>
