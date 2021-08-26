@@ -7,19 +7,59 @@
     <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Earthmounds | About</title>
 </head>
-    <body class="bg-red-400">
-        <div class="border bg-white h-screen p-8">
-            <a href="./index.html">
-                <img class="mx-auto w-64" src="./assets/text_logo.gif" alt="Animated logo of Earthmounds brand">
-            </a>
-            <nav class="flex gap-4 mt-4 mx-auto w-max">
-                <a href="./wholesale.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">wholesale</a>
-                <a href="./shop.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">shop</a>
-                <a href="./about.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">about</a>
-                <a href="./contact.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">contact</a>
-            </nav>
+    <body class="" x-data="{ toggleMenu: false }">
+        <div class="absolute transform w-screen h-screen bg-lime-200 p-8" :class="toggleMenu ? 'absolute' : 'hidden'">         
+            <button 
+            type="button"
+            id="hamburger"
+            x-on:click="toggleMenu = !toggleMenu"
+            x-show="toggleMenu"
+            class="block ml-auto sm:hidden w-8 h-6">
+            <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M16.37 14.2C16.79 13.69 17.19 13.18 17.62 12.68C20.79 8.94003 24.99 6.20003 27.81 2.16003C28.91 0.58003 26.3 -0.89997 25.2 0.68003C23.84 2.62003 22.06 4.20003 20.3 5.76003C18.47 7.39003 16.78 9.05003 15.19 10.91C14.86 11.3 14.54 11.7 14.22 12.09C10.04 7.98003 5.88001 3.99003 2.60001 1.05003C1.17001 -0.22997 -0.959988 1.88003 0.480012 3.17003C3.82001 6.16003 8.07001 10.24 12.33 14.43C11.85 15.04 11.36 15.66 10.88 16.28C9.38001 18.21 3.52001 23.85 1.70001 25.46C0.250012 26.74 2.38001 28.85 3.82001 27.58C5.70001 25.92 11.57 20.23 13.12 18.25C13.57 17.68 14.02 17.11 14.46 16.55C18.52 20.56 22.46 24.52 25.5 27.54C26.87 28.9 28.99 26.78 27.62 25.42C24.54 22.34 20.51 18.29 16.37 14.2Z" fill="black"/>
+                </g>
+            </svg>
+        </button>
+        <nav class="text-center flex flex-col sm:hidden gap-4 mt-12 mx-auto w-max">
+            <a href="./wholesale.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">wholesale</a>
+            <a href="./shop.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">shop</a>
+            <a href="./about.html" class="font-poppins font-medium text-lime-500 hover:text-lime-500 cursor-pointer">about</a>
+            <a href="./contact.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">contact</a>
+        </nav>
         </div>
+        <div class="bg-white h-screen p-8 xl:w-10/12 mx-auto">
+            <div class="flex justify-between items-start">
+                <a href="./index.html">
+                    <img class="mx-auto -mt-2 w-36 md:w-48" src="./assets/text_logo.gif" alt="Animated logo of Earthmounds brand">
+                </a>
+                <nav class="hidden sm:flex gap-4 ml-auto w-max">
+                    <a href="./wholesale.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">wholesale</a>
+                    <a href="./shop.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">shop</a>
+                    <a href="./about.html" class="font-poppins font-medium text-lime-500 hover:text-lime-500 cursor-pointer">about</a>
+                    <a href="./contact.html" class="font-poppins font-medium hover:text-lime-500 cursor-pointer">contact</a>
+                </nav>
+                <button 
+                    type="button"
+                    id="hamburger"
+                    x-on:click="toggleMenu = !toggleMenu"
+                    x-show="!toggleMenu"
+                    class="flex flex-col justify-between sm:hidden w-8 h-6">
+                    <svg width="40" height="27" viewBox="0 0 40 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                        <path d="M1.44 3.92001C3.94 4.08001 6.45 4.22001 8.95 3.92001C11.33 3.63001 13.68 3.35001 16.07 3.15001C20.96 2.75001 25.86 3.78001 30.72 2.92001C32.62 2.58001 31.81 -0.309991 29.92 0.0300089C27.59 0.440009 25.21 0.300009 22.86 0.160009C20.41 0.0100089 18.04 8.9258e-06 15.6 0.190009C13.3 0.370009 11.04 0.650009 8.75 0.940009C6.33 1.24001 3.87 1.07001 1.44 0.920009C-0.48 0.800009 -0.48 3.80001 1.44 3.92001Z" fill="black"/>
+                        <path d="M1.5 14.68C6.22 15.36 11 14.49 15.74 14.41C18.11 14.37 20.39 13.84 22.74 13.63C25.26 13.4 27.79 13.43 30.31 13.66C32.23 13.84 32.22 10.83 30.31 10.66C27.95 10.44 25.58 10.41 23.21 10.59C20.87 10.77 18.56 11.33 16.21 11.4C13.86 11.47 11.56 11.52 9.22 11.74C6.92 11.95 4.59 12.12 2.29 11.79C0.410004 11.51 -0.399996 14.4 1.5 14.68Z" fill="black"/>
+                        <path d="M2.50998 26.24C12.01 25.71 21.52 25.44 31.03 25.41C32.96 25.41 32.96 22.41 31.03 22.41C21.52 22.43 12 22.71 2.50998 23.24C0.589976 23.35 0.579976 26.35 2.50998 26.24Z" fill="black"/>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <section class="text-center mx-auto w-64">
+                <h1 class="mt-12">This is the about section</h1>
+            </section>
+        <script src="./js/contact.js"></script>
     </body>
 </html>
