@@ -561,6 +561,10 @@ video {
   top: 2rem;
 }
 
+.-top-6 {
+  top: -1.5rem;
+}
+
 .right-4 {
   right: 1rem;
 }
@@ -571,6 +575,10 @@ video {
 
 .bottom-6 {
   bottom: 1.5rem;
+}
+
+.-left-4 {
+  left: -1rem;
 }
 
 .mx-auto {
@@ -866,6 +874,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.text-lime-400 {
+  --tw-text-opacity: 1;
+  color: rgba(163, 230, 53, var(--tw-text-opacity));
 }
 
 .text-lime-500 {
