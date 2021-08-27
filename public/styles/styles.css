@@ -606,6 +606,10 @@ video {
   margin-top: 3rem;
 }
 
+.mt-48 {
+  margin-top: 12rem;
+}
+
 .-mt-2 {
   margin-top: -0.5rem;
 }
@@ -807,6 +811,11 @@ video {
 
 .border {
   border-width: 1px;
+}
+
+.border-green-200 {
+  --tw-border-opacity: 1;
+  border-color: rgba(167, 243, 208, var(--tw-border-opacity));
 }
 
 .bg-white {
