@@ -610,6 +610,10 @@ video {
   margin-top: -0.5rem;
 }
 
+.ml-48 {
+  margin-left: 12rem;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -644,6 +648,10 @@ video {
 
 .h-64 {
   height: 16rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-screen {
