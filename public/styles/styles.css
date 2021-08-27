@@ -557,12 +557,12 @@ video {
   position: relative;
 }
 
-.top-8 {
-  top: 2rem;
+.top-0 {
+  top: 0px;
 }
 
-.-top-6 {
-  top: -1.5rem;
+.top-8 {
+  top: 2rem;
 }
 
 .right-4 {
@@ -577,8 +577,8 @@ video {
   bottom: 1.5rem;
 }
 
-.-left-4 {
-  left: -1rem;
+.left-2 {
+  left: 0.5rem;
 }
 
 .mx-auto {
@@ -911,6 +911,14 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:-top-6 {
+    top: -1.5rem;
+  }
+
+  .sm\:-left-4 {
+    left: -1rem;
+  }
+
   .sm\:mt-6 {
     margin-top: 1.5rem;
   }
