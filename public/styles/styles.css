@@ -614,6 +614,10 @@ video {
   margin-top: -0.5rem;
 }
 
+.-mt-8 {
+  margin-top: -2rem;
+}
+
 .ml-48 {
   margin-left: 12rem;
 }
@@ -813,11 +817,6 @@ video {
   border-width: 1px;
 }
 
-.border-green-200 {
-  --tw-border-opacity: 1;
-  border-color: rgba(167, 243, 208, var(--tw-border-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -868,6 +867,10 @@ video {
 
 .pt-48 {
   padding-top: 12rem;
+}
+
+.pt-64 {
+  padding-top: 16rem;
 }
 
 .text-center {
