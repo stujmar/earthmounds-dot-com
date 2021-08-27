@@ -33,3 +33,8 @@ var tl = gsap.timeline({repeat: 30, repeatDelay: 1});
 tl.to("#conrad", {duration:2, x:300, ease: "bounce"});
 tl.to("#conrad", {duration:2, x:-500, ease: "bounce"});
 // gsap.to("#conrad", {duration:2, x:0, ease: "bounce"});
+
+var waveOne = gsap.timeline({repeat: 30, repeatDelay: 1});
+waveOne.to("#wave-01", { duration: 2.5, ease: "power1.inOut", x: -250 });
+waveOne.to("#wave-01", { duration: 2.5, ease: "power1.inOut", x: 250 });
+
