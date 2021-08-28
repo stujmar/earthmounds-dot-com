@@ -50,5 +50,8 @@ let waveTwoB = gsap.timeline({repeat: 30, repeatDelay: 1});
 waveTwoB.to("#wave-02b", { duration: 2.5, ease: "power1.inOut", x: -150 });
 waveTwoB.to("#wave-02b", { duration: 2.5, ease: "power1.inOut", x: 0 });
 
+let cloudPathOne = gsap.timeline({repeat: 130, repeatDelay: 0});
+cloudPathOne.to("#cloud-01", {duration: 40, x: screen.width + 250, ease: "power1.inOut"});
+
 let screenWidth = "Total Width: " + screen.width;
 console.log(screenWidth);
