@@ -31,7 +31,7 @@ function timer(timerIndex, dir, images, img) {
 
 var tl = gsap.timeline({repeat: 130, repeatDelay: 0});
 tl.to("#conrad", {duration:2, x:300, ease: "bounce"});
-tl.to("#conrad", {duration:2, x:-500, ease: "bounce"});
+tl.to("#conrad", {duration:2, x:0, ease: "bounce"});
 // gsap.to("#conrad", {duration:2, x:0, ease: "bounce"});
 
 var waveOne = gsap.timeline({repeat: 130, repeatDelay: 0});
